@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
@@ -12,7 +13,7 @@
 
   <style>
     :root {
-      --primary: #c93b2b; /* אדום וייטנאמי מודרני */
+      --primary: #c93b2b;
       --primary-soft: #fcf0ee;
       --accent-gold: #e5a93b;
       --accent-gold-soft: #fef8ee;
@@ -41,7 +42,6 @@
       direction: rtl;
     }
 
-    /* כותרת עליונה */
     header {
       position: sticky;
       top: 0;
@@ -90,7 +90,6 @@
       font-weight: 700;
     }
 
-    /* פס גלילת ימים אופקי */
     .days-scroller-container {
       background: #fff;
       padding: 12px 0;
@@ -131,7 +130,6 @@
       box-shadow: 0 4px 12px rgba(201, 59, 43, 0.35);
     }
 
-    /* תוכן ראשי */
     main {
       padding: 20px 16px;
       max-width: 650px;
@@ -218,7 +216,6 @@
       margin-bottom: 0;
     }
 
-    /* כפתור מפה וניווט */
     .btn-maps {
       display: flex;
       align-items: center;
@@ -236,7 +233,6 @@
       margin-bottom: 20px;
     }
 
-    /* אזור שיתוף ותגובות */
     .community-box {
       padding-top: 18px;
       border-top: 1px dashed var(--line);
@@ -317,7 +313,6 @@
       cursor: pointer;
     }
 
-    /* לשוניות מידע כללי */
     .info-card {
       background: #fff;
       border-radius: 16px;
@@ -347,7 +342,6 @@
       margin-top: 6px;
     }
 
-    /* סרגל ניווט תחתון קבוע */
     .bottom-nav {
       position: fixed;
       bottom: 0;
@@ -394,118 +388,114 @@
       <div class="brand-flag">🇻🇳</div>
       <div class="brand-text">
         <h1>VIETNAM 2026</h1>
-        <p>סאפה • הא ג'יאנג • הלונג • דה נאנג</p>
+        <p>סאפה (4 ימים) • הא ג'יאנג • הלונג • דה נאנג</p>
       </div>
     </div>
-    <div class="status-badge">13 ימים</div>
+    <div class="status-badge">14 ימים</div>
   </header>
 
   <!-- תצוגת מסלול יומי -->
   <div id="tab-itinerary" class="tab-view active">
-    <!-- פס גלילת ימים -->
     <div class="days-scroller-container">
       <div class="days-scroller" id="daysScroller"></div>
     </div>
 
     <main>
-      <div class="card" id="dayCard">
-        <!-- תוכן נטען דינמית -->
-      </div>
+      <div class="card" id="dayCard"></div>
     </main>
   </div>
 
-  <!-- תצוגת טיפים חשובים -->
+  <!-- תצוגת טיפים ודגשים -->
   <div id="tab-tips" class="tab-view">
     <main>
       <div class="info-card">
-        <h3>🌦️ מזג האוויר מנהל חלק מהטיול</h3>
-        <p>• <strong>סאפה:</strong> עלייה ל-Fansipan רק כשיש ראות טובה. עננים וערפל נכנסים ויוצאים במהירות.<br>
-           • <strong>הא ג'יאנג:</strong> גשם משפיע באופן ישיר על בטיחות תנאי הרכיבה בהרים.<br>
-           • <strong>הלונג ביי:</strong> הפלגות עשויות להשתנות או להידחות לפי הנחיות הצי ומזג האוויר בים.</p>
+        <h3>🚂 חוויית רכבות ההרים בסאפה (Sun World)</h3>
+        <p>• <strong>רכבת העמק (Muong Hoa Funicular):</strong> יוצאת ישירות ממרכז סאפה (מבנה ה-Sun Plaza הצהוב). נסיעה קולוניאלית מרהיבה בת כ-6 דקות מעל גשרים תלויים וטרסות אורז ישירות לתחנת הרכבל Hoang Lien.<br>
+           • <strong>רכבל הפנסיפן:</strong> רכבל שובר שיאים בינלאומיים המרחף מעל רכס הואנג ליין סון.<br>
+           • <strong>רכבת הפסגה (Fansipan Peak Funicular):</strong> מתחנת הרכבל העליונה עולים בקרונית הרים אדומה עד סמוך לפסל הבודהה ונקודת הפסגה בגובה 3,143 מ' (חוסכת טיפוס של 600 מדרגות באוויר דליל!).</p>
+      </div>
+
+      <div class="info-card">
+        <h3>🌦️ מזג האוויר בסאפה ובלופ</h3>
+        <p>• <strong>סאפה:</strong> מזג אוויר הררי והפכפך. לעלייה לפנסיפן בודקים מצלמות ראות בבוקר (אם השמיים פתוחים עולים מיד!).<br>
+           • <strong>הא ג'יאנג:</strong> גשם משפיע על מצב הכבישים בהרים.<br>
+           • <strong>הלונג ביי:</strong> הפלגות עשויות להתעדכן לפי מזג האוויר בים.</p>
       </div>
 
       <div class="info-card">
         <h3>🛵 בהא ג'יאנג Loop — Easy Rider בלבד!</h3>
-        <p>שלושה ימים רצופים על כבישי הרים צרים, מפותלים ותלולים מאוד הם לא הזמן והמקום להתנסות ברכיבה עצמאית. תנו לנהגים המקומיים לרכוב ואתם תיהנו מהנוף הפראי בראש שקט.</p>
+        <p>הכבישים צרים, תלולים ומפותלים לאורך תהומות. רכיבה עם נהג מקומי מנוסה מאפשרת לכם לצלם וליהנות מנופי הפרא בביטחון מלא.</p>
       </div>
 
       <div class="info-card">
         <h3>🧘 אל תעמיסו – מנוחה בדה נאנג</h3>
-        <p>אחרי טרקים בטרסות האורז, רכיבות אינטנסיביות בלופ ומעברים ארוכים – בדה נאנג הורידו הילוך! שלבו ים, בתי קפה, אוכל משובח ואת הוי אן, ולא מרתון אטרקציות מתיש.</p>
+        <p>אחרי 4 ימי טבע בסאפה ורכיבות בלופ – בדה נאנג מורידים הילוך! ים, קפה, פירות ים ואווירת פנסים בהוי אן.</p>
       </div>
     </main>
   </div>
 
-  <!-- תצוגת קולינריה -->
+  <!-- תצוגת אוכל לפי אזור -->
   <div id="tab-food" class="tab-view">
     <main>
       <div class="info-card">
         <h3>🍲 סאפה</h3>
-        <p><strong>Lẩu cá hồi:</strong> סיר Hot Pot מסורתי ועשיר עם סלמון מקומי הגדל במי המעיינות הקרים של סאפה. מוגש עם שפע עשבי תיבול טריים.</p>
+        <p>• <strong>Lẩu cá hồi:</strong> סיר Hot Pot עשיר בסלמון טרי מהמעיינות ועשבי הרים.<br>
+           • <strong>בשר על האש (Đồ nướng):</strong> שיפודי פטריות, ירקות ובשרים בשווקי הלילה ליד כנסיית האבן.<br>
+           • <strong>Thắng cố:</strong> מאכל מסורתי של שבט ההמונג.<br>
+           • <strong>Taste Of Vietnam Kitchen:</strong> מסעדה מומלצת ומצוינת במרכז סאפה.</p>
       </div>
 
       <div class="info-card">
         <h3>🏡 הא ג'יאנג</h3>
-        <p><strong>ארוחות משפחתיות ב-Homestay:</strong> החוויה הקולינרית והחברתית המרכזית בלופ. אכילה סביב שולחן נמוך יחד עם המארחים, כולל הרמת כוסית מסורתית של Happy Water (יין אורז).</p>
+        <p><strong>ארוחות משפחתיות ב-Homestay:</strong> שולחנות משותפים עם המארחים, מנות ביתיות וכוסית "Happy Water" (יין אורז מסורתי).</p>
       </div>
 
       <div class="info-card">
         <h3>🍜 דה נאנג</h3>
-        <p>• <strong>Mì Quảng:</strong> אטריות אורז רחבות עם בשר, שרימפס, בוטנים וקרקר שומשום.<br>
-           • <strong>Bún chả cá:</strong> מרק אטריות עם קציצות דג מקומיות.<br>
-           • <strong>Bánh xèo:</strong> קרפ וייטנאמי פריך ממולא שרימפס ונבטים.<br>
-           • <strong>Bánh tráng cuốn thịt heo:</strong> פרוסות חזיר מגולגלות עם עשבים בדפי אורז.<br>
-           • <strong>פירות ים טריים (Seafood):</strong> לאורך החוף במסעדות מקומיות (כמו Mộc quán).</p>
+        <p>• <strong>Mì Quảng:</strong> אטריות כורכום רחבות עם שרימפס ובשר.<br>
+           • <strong>Bún chả cá:</strong> מרק אטריות עם קציצות דגים מקומיות.<br>
+           • <strong>Bánh xèo:</strong> קרפ פריך עשיר בעשבי תיבול.<br>
+           • <strong>פירות ים טריים:</strong> במסעדות החוף (כמו Mộc quán Seafood).</p>
       </div>
 
       <div class="info-card">
         <h3>🏮 הוי אן (Hoi An)</h3>
-        <p>• <strong>Cao Lầu:</strong> אטריות ייחודיות להוי אן עם חזיר צלוי, ירק וקרוטונים פריכים.<br>
-           • <strong>White Rose Dumplings (Bánh bao bánh vạc):</strong> כיסוני שרימפס עדינים ושקופים.<br>
-           • <strong>Bánh mì:</strong> הוי אן מפורסמת בכריכי הבאן מי הטובים בעולם.<br>
-           • <strong>Cơm gà Hội An:</strong> אורז עוף עשיר בכורכום ובצל מוחמץ.</p>
+        <p>• <strong>Cao Lầu:</strong> אטריות ייחודיות עם חזיר צלוי וקרוטונים פריכים.<br>
+           • <strong>White Rose:</strong> כיסוני שרימפס שקופים.<br>
+           • <strong>Bánh mì:</strong> כריכי באן מי מפורסמים מהטובים בעולם.<br>
+           • <strong>Cơm gà:</strong> אורז עוף צהבהב בטעמים עדינים.</p>
       </div>
     </main>
   </div>
 
-  <!-- תצוגת מידע שימושי ומעברים -->
+  <!-- תצוגת מידע ומעברים -->
   <div id="tab-info" class="tab-view">
     <main>
       <div class="info-card">
-        <h3>🚐 מעברי נסיעות (The Transit Overview)</h3>
+        <h3>🚐 לוח מעברים מעודכן (Transit Overview)</h3>
         <ul>
-          <li><strong>VAN:</strong> האנוי ← סאפה (~5.5–6 שעות)</li>
-          <li><strong>VAN:</strong> סאפה ← הא ג'יאנג (~6 שעות, רכב ישיר)</li>
-          <li><strong>BUS:</strong> הא ג'יאנג ← הא לונג ביי (~10–11 שעות, עדיף Sleeper VIP לילה)</li>
-          <li><strong>CRUISE:</strong> שייט יומיים ולילה במפרץ הלונג / לאן הא</li>
-          <li><strong>VAN + FLIGHT:</strong> הלונג ← שדה תעופה Noi Bai/Cat Bi ← טיסה לדה נאנג (~1:20 שעות)</li>
-          <li><strong>FLIGHT:</strong> טיסה דה נאנג ← האנוי (~1:25 שעות)</li>
+          <li><strong>רכב/לימוזין:</strong> האנוי ← סאפה (~5.5–6 שעות)</li>
+          <li><strong>רכב ישיר (יום רביעי):</strong> סאפה ← הא ג'יאנג (~6 שעות)</li>
+          <li><strong>אוטובוס לילה VIP:</strong> הא ג'יאנג ← הא לונג ביי (~10–11 שעות)</li>
+          <li><strong>שייט קרוז:</strong> יומיים ולילה אחד במפרץ הלונג / לאן הא</li>
+          <li><strong>רכב + טיסה פנימית:</strong> הלונג ← שדה תעופה Noi Bai/Cat Bi ← דה נאנג (~1:20 שעות)</li>
+          <li><strong>טיסה פנימית:</strong> דה נאנג ← האנוי (~1:25 שעות)</li>
         </ul>
       </div>
 
       <div class="info-card">
-        <h3>💰 כסף והוצאות</h3>
-        <p>המטבע המקומי הוא דונג וייטנאמי (VND). מזומן הוא המלך בצפון ובשווקים! כרטיסי אשראי מתקבלים בעיקר במלונות ובמסעדות גדולות בדה נאנג ובהאנוי.</p>
+        <h3>💰 כסף ומזומנים</h3>
+        <p>דונג וייטנאמי (VND). בסאפה ובשבטי ההרים מזומן הוא חובה! יש כספומטים במרכז סאפה, אך כדאי להצטייד מראש בהאנוי.</p>
       </div>
 
       <div class="info-card">
-        <h3>📶 SIM ותקשורת</h3>
-        <p>כרטיס Viettel או Vinaphone עם חבילת גלישה ללא הגבלה (eSIM או סים בשדה התעופה בהאנוי). קליטה מעולה כמעט בכל מקום, כולל לאורך הלופ.</p>
-      </div>
-
-      <div class="info-card">
-        <h3>🚕 תחבורה מקומית (Grab)</h3>
-        <p>הורידו מראש את אפליקציית <strong>Grab</strong> (המקבילה לאובר). שימושית וזולה מאוד בדה נאנג, בהוי אן ובהאנוי – מונעת עקיצות מחיר של מוניות.</p>
-      </div>
-
-      <div class="info-card">
-        <h3>🎒 ציוד חובה</h3>
-        <p>נעלי הליכה עם סוליה אוחזת (שבילי הטרסות בסאפה בוציים ומחליקים), מעיל גשם קל/פונצ'ו, תיק גב קטן לימי הלופ (המזוודות הגדולות נשארות בהוסטל).</p>
+        <h3>🎒 ציוד חובה בסאפה</h3>
+        <p>נעלי טרק עם סוליה אוחזת נגד בוץ והחלקה, מעיל רוח/גשם דק לשעות הבוקר בפנסיפן, ותרמיל יום קל.</p>
       </div>
     </main>
   </div>
 
-  <!-- סרגל ניווט תחתון -->
+  <!-- סרגל ניווט תחתון קבוע -->
   <nav class="bottom-nav">
     <button class="nav-tab active" onclick="switchNavTab('itinerary', this)">
       <span class="icon">📅</span>
@@ -513,7 +503,7 @@
     </button>
     <button class="nav-tab" onclick="switchNavTab('tips', this)">
       <span class="icon">💡</span>
-      <span>דגשים וטיפים</span>
+      <span>רכבות וטיפים</span>
     </button>
     <button class="nav-tab" onclick="switchNavTab('food', this)">
       <span class="icon">🍜</span>
@@ -521,153 +511,160 @@
     </button>
     <button class="nav-tab" onclick="switchNavTab('info', this)">
       <span class="icon">🧳</span>
-      <span>מידע ומעברים</span>
+      <span>מעברים ומידע</span>
     </button>
   </nav>
 
   <script>
-    // רשימת חברי הקבוצה
     const travelers = [
       "רפי", "גל", "אור", "רון", "דניאל", "אלון", "עופר", "ריקי", "ניב"
     ];
 
-    // בסיס נתוני המסלול
     const vietnamItinerary = [
       {
         day: 1,
-        area: "אזור 1: SAPA",
-        title: "האנוי ← סאפה | היכרות עם סאפה",
-        timeline: "נסיעה מהאנוי (5.5–6 שעות) ➔ צ'ק-אין וצהריים ➔ אחה\"צ בכפר Cat Cat ➔ ערב במרכז סאפה.",
-        sites: "כפר Cat Cat (כפר שבט Hmong, טרסות ומפל), כנסיית האבן (Stone Church), הכיכר המרכזית, שוק סאפה ברחוב Cầu Mây.",
-        food: "Hmong Restaurant (אוכל מקומי אותנטי). חובה לטעום: Lẩu cá hồi (Hot Pot סלמון מקומי).",
-        logistics: "נסיעה ברכב/לימוזין. מזג אוויר הפכפך (ערפל נכנס מהר). לא להעמיס ביום הראשון.",
-        mapQuery: "Stone Church Sapa Vietnam"
+        area: "סאפה • יום 1",
+        title: "האנוי ← סאפה | היכרות עם העיירה וכפר Cat Cat",
+        timeline: "נסיעה מהאנוי ברכב/לימוזין (5.5–6 שעות) ➔ צ'ק-אין ומנוחה ➔ אחה\"צ: סיור בכפר קאט קאט ➔ ערב: מרכז סאפה, כנסיית האבן והשוק.",
+        sites: "כפר שבט ההמונג Cat Cat (שבילי עץ, גשרונים ומפלים), כנסיית האבן הצרפתית (Stone Church), הכיכר המרכזית, שוק הלילה ברחוב Cầu Mây.",
+        food: "מסעדת Hmong Restaurant. מומלץ בחום: Lẩu cá hồi (סיר Hot Pot עם סלמון מקומי טרי).",
+        logistics: "יום נחיתה והתאקלמות רגוע. מזג האוויר מתקרר בערב – הצטיידו בשכבה חמימה.",
+        mapQuery: "Stone Church Sapa"
       },
       {
         day: 2,
-        area: "אזור 1: SAPA",
-        title: "Mường Hoa Valley – Lao Chai – Ta Van",
-        timeline: "08:30 יציאה לטרק (4–5 שעות) ➔ צהריים בכפר Ta Van ➔ חזרה ברכב לסאפה, מקלחת, מסאז' וקפה ➔ ארוחת ערב.",
-        sites: "עמק Mường Hoa היפהפה, טרסות אורז ירוקות, כפרי שבטי המיעוטים Lao Chai ו-Ta Van.",
-        food: "צהריים באזור Ta Van, ארוחת ערב ב-Taste Of Vietnam Kitchen בסאפה.",
-        logistics: "נעלי הליכה עם אחיזה מעולה! השבילים בוציים ומחליקים. תקופה נהדרת לשדות האורז.",
+        area: "סאפה • יום 2",
+        title: "טרק טרסות האורז: עמק Mường Hoa, Lao Chai ו-Ta Van",
+        timeline: "08:30 יציאה עם מדריך מקומי לטרק בעמק (4–5 שעות) ➔ צהריים בכפר Ta Van ➔ חזרה ברכב לסאפה ➔ עיסוי רגליים וקפה נוף ➔ ארוחת ערב.",
+        sites: "עמק Mường Hoa היפהפה, טרסות האורז המפורסמות, כפרי שבטי המיעוטים Lao Chai (שבט Black Hmong) ו-Ta Van (שבט Giay).",
+        food: "ארוחת צהריים כפרית ב-Ta Van. בערב: Taste Of Vietnam Kitchen במרכז סאפה.",
+        logistics: "חובה נעלי הליכה עם אחיזה טובה! שבילי הטרסות חלקים מאוד. מקלות הליכה יסייעו בירידות.",
         mapQuery: "Muong Hoa Valley Sapa"
       },
       {
         day: 3,
-        area: "אזור 1: SAPA ➔ HÀ GIANG",
-        title: "הר Fansipan + מעבר ל-Hà Giang",
-        timeline: "בוקר ברכבל לפנסיפן ➔ 13:30 ארוחת צהריים ➔ אחה\"צ חופשי בסאפה ➔ מעבר ערב להא ג'יאנג.",
-        sites: "הר פנסיפן (Fansipan) – 'גג הודו-סין' (3,143 מטר, רכבל 15 דק', מקדשים ופסלי בודהה ענקיים).",
-        food: "ארוחת צהריים בסאפה לפני הנסיעה.",
-        logistics: "לבדוק ראות בבוקר לפני העלייה! מעבר ערב ישיר ל-Hà Giang בלימוזין/אוטובוס (~6 שעות, לינה בעיר Hà Giang).",
-        mapQuery: "Fansipan Cable Car Station Sapa"
+        area: "סאפה • יום 3",
+        title: "חוויית רכבות ההרים וכיבוש פסגת Fansipan",
+        timeline: "בוקר: רכבת ההרים ממרכז סאפה ➔ רכבל הפנסיפן ➔ רכבת הפסגה לפסל הבודהה והשיא (3,143 מ') ➔ צהריים ➔ אחה\"צ: גבעת Ham Rong.",
+        sites: "רכבת ההרים Mường Hoa Funicular (יוצאת מבניין Sun Plaza הצהוב), רכבל שובר שיאים אל פסגת Fansipan, רכבת ההרים לפסגה (Peak Funicular) ופסל הבודהה הענק, פארק הר חאם רונג.",
+        food: "מזנון בופה בפסגת פנסיפן (או במסעדות מרכז העיירה), קפה וייטנאמי משובח עם נוף לעמק.",
+        logistics: "לבדוק ראות בשמיים בבוקר לפני העלייה! קנו כרטיס משולב הכולל רכבת עמק + רכבל + רכבת פסגה.",
+        mapQuery: "Sun Plaza Sapa"
       },
       {
         day: 4,
-        area: "אזור 2: HA GIANG LOOP",
-        title: "Hà Giang → Quan Ba → Yen Minh → Dong Van",
-        timeline: "08:00 יציאה בלופ ➔ עשרות עצירות נוף וקפה ➔ ערב ברובע העתיק של דונג ואן.",
-        sites: "מעבר Bac Sum, שער השמיים (Heaven's Gate), הרי התאומים ב-Quan Ba, יערות Yen Minh, מעבר Tham Ma, עמק Sung La, ארמון מלך ההמונג (Hmong King's Palace).",
-        food: "ארוחות פשוטות לאורך הדרך, מסעדה משפחתית או אכילה ב-Homestay בדונג ואן.",
-        logistics: "Easy Rider בלבד! כבישים צרים ומפותלים. להשאיר מזוודות גדולות בהא ג'יאנג ולצאת עם תרמיל קל.",
-        mapQuery: "Dong Van Old Quarter Ha Giang"
+        area: "סאפה ➔ הא ג'יאנג • יום 4 (רביעי)",
+        title: "מעבר שער השמיים O Quy Ho ומעבר להא ג'יאנג",
+        timeline: "בוקר: נסיעה למעבר ההרים O Quy Ho ומפלי הכסף ➔ צהריים והתארגנות בסאפה ➔ אחה\"צ/ערב: נסיעה ברכב ישיר ל-Hà Giang City.",
+        sites: "מעבר ההרים הגבוה O Quy Ho Pass ('שער השמיים'), מפלי הכסף והאהבה (Silver & Love Waterfalls), תצפיות נוף פנורמיות לרכס האלפים של וייטנאם.",
+        food: "ארוחת צהריים אחרונה בסאפה. ארוחת ערב מקומית בעיר Hà Giang לאחר ההגעה.",
+        logistics: "מעבר יום רביעי: נסיעה של כ-6 שעות ברכב/לימוזין ישיר מסאפה להא ג'יאנג. לינה בעיר Hà Giang והכנת תרמיל קל ללופ.",
+        mapQuery: "O Quy Ho Pass Vietnam"
       },
       {
         day: 5,
-        area: "אזור 2: HA GIANG LOOP",
-        title: "Dong Van → Ma Pi Leng → Nho Que → Du Gia",
-        timeline: "בוקר במעבר Ma Pi Leng ➔ שיט בקניון נהר Nho Que ➔ נסיעה דרך Meo Vac ו-Mau Due ➔ ערב ב-Du Gia.",
-        sites: "מעבר Ma Pi Leng (שיא הלופ!), תצפיות עוצרות נשימה, שייט בסירה בקניון נהר Nho Que, כפרים אותנטיים ב-Du Gia.",
-        food: "ארוחת ערב משפחתית מסורתית ב-Homestay ב-Du Gia יחד עם המארחים.",
-        logistics: "קטע הרכיבה היפה ביותר בווייטנאם. שיט בנהר מותנה במזג אוויר וזרימה תקינה.",
-        mapQuery: "Ma Pi Leng Pass Vietnam"
+        area: "הא ג'יאנג לופ • יום 5",
+        title: "Hà Giang → Quan Ba → Yen Minh → Dong Van",
+        timeline: "08:00 יציאה עם נהגי Easy Rider ➔ עשרות עצירות נוף וקפה ➔ ערב ברובע העתיק של דונג ואן.",
+        sites: "מעבר Bac Sum, שער השמיים של קוואן בה, הרי התאומים, יערות Yen Minh, מעבר Tham Ma, עמק Sung La, ארמון מלך ההמונג.",
+        food: "אוכל ביתי בעיירות הדרך, ארוחת ערב משפחתית או מסעדה מקומית ב-Dong Van Old Quarter.",
+        logistics: "Easy Rider בלבד! להשאיר מזוודות גדולות בהא ג'יאנג ולצאת עם תרמיל גב קל של 15-20 ליטר.",
+        mapQuery: "Dong Van Old Quarter"
       },
       {
         day: 6,
-        area: "אזור 2: HA GIANG ➔ HA LONG",
-        title: "Du Gia → Hà Giang → הא לונג ביי",
-        timeline: "בוקר במפל Du Gia ➔ רכיבה חזרה לעיר Hà Giang ➔ מעבר ארוך במיוחד להא לונג ביי.",
-        sites: "מפל Du Gia (שחייה אם הזמן מאפשר), חזרה לנקודת הבסיס של הלופ.",
-        food: "ארוחת צהריים מהירה בהא ג'יאנג לפני היציאה למעבר.",
-        logistics: "⚠️ היום הלוגיסטי הארוך ביותר! מעבר של 10–11 שעות (כ-460 ק\"מ). מומלץ אוטובוס לילה VIP / לימוזין שינה.",
-        mapQuery: "Du Gia Waterfall Ha Giang"
+        area: "הא ג'יאנג לופ • יום 6",
+        title: "Dong Van → Ma Pi Leng → Nho Que → Du Gia",
+        timeline: "בוקר במעבר Ma Pi Leng המרהיב ➔ שייט בסירה בקניון נהר Nho Que ➔ נסיעה דרך Meo Vac ל-Du Gia ➔ ערב ב-Homestay.",
+        sites: "מעבר Ma Pi Leng (שיא הנוף של הלופ!), קניון נהר Nho Que בצבע טורקיז עז, עיירת Meo Vac, עמק הכפרים Du Gia.",
+        food: "ארוחת ערב מסורתית וחגיגית עם משפחת ה-Homestay ב-Du Gia (ושתיית Happy Water).",
+        logistics: "קטע הרכיבה היפה ביותר בדרום מזרח אסיה. הביאו בגדים חמים לנסיעה בגובה.",
+        mapQuery: "Ma Pi Leng Pass Vietnam"
       },
       {
         day: 7,
-        area: "אזור 3: HA LONG BAY",
-        title: "שייט תענוגות במפרץ הלונג (Cruise)",
-        timeline: "צהריים: עלייה לספינה ➔ מסלול שייט בין צוקי הקארסט ➔ קיאקים ומערות ➔ שקיעה על הסיפון וארוחת ערב.",
-        sites: "מפרץ הלונג / מפרץ לאן הא (Lan Ha Bay), שייט קיאקים, ביקור במערת נטיפים, תצפית Sunset Deck.",
-        food: "ארוחת ערב מפנקת ופירות ים טריים על הספינה.",
-        logistics: "קרוז של יומיים / לילה 1. עדיפות למסלול העובר במפרץ Lan Ha הפחות עמוס.",
-        mapQuery: "Halong Bay International Cruise Port"
+        area: "הא ג'יאנג ➔ הלונג • יום 7",
+        title: "Du Gia → Hà Giang → מעבר ארוך להא לונג ביי",
+        timeline: "בוקר במפל Du Gia ➔ רכיבה חזרה לעיר Hà Giang ➔ פרידה מהנהגים ויציאה למעבר הארוך להא לונג ביי.",
+        sites: "מפל המים Du Gia (טבילה מרעננת), חזרה לנקודת ההתחלה של הלופ בעיר הא ג'יאנג.",
+        food: "ארוחת צהריים בהא ג'יאנג והצטיידות בנשנושים לנסיעה הארוכה.",
+        logistics: "⚠️ היום הלוגיסטי הארוך ביותר: כ-10–11 שעות נסיעה. מומלץ אוטובוס לילה VIP לימוזין עם דרגשי שינה נוחים.",
+        mapQuery: "Du Gia Waterfall"
       },
       {
         day: 8,
-        area: "אזור 3: HA LONG ➔ DA NANG",
-        title: "בוקר במפרץ → טיסה לדה נאנג",
-        timeline: "בוקר מוקדם: טאי-צ'י וארוחת בוקר על הסיפון ➔ ירידה בנמל בצהריים ➔ נסיעה לשדה תעופה ➔ טיסה לדה נאנג ➔ צ'ק-אין.",
-        sites: "נופי בוקר של המפרץ, הגעה לעיר החוף המודרנית דה נאנג.",
-        food: "ארוחת ערב ראשונה באזור חוף My Khe בדה נאנג.",
-        logistics: "טיסה מ-Noi Bai (האנוי, ~2.5 שעות מהנמל) או Cat Bi (האי פונג). סה\"כ מעבר של 6–8 שעות.",
-        mapQuery: "My Khe Beach Da Nang"
+        area: "הלונג ביי • יום 8",
+        title: "שייט תענוגות ולינה במפרץ הלונג / לאן הא (Cruise)",
+        timeline: "צהריים: עלייה לספינת הקרוז ➔ שייט בין צוקי הקארסט ➔ חתירה בקיאקים ומערות ➔ שקיעה על הסיפון וארוחת ערב.",
+        sites: "מפרץ הלונג ומפרץ Lan Ha Bay, שייט קיאקים במים השקטים, מערות נטיפים, שיעור בישול ושקיעה על ה-Sunset Deck.",
+        food: "ארוחת ערב עשירה ופירות ים טריים המוגשים על גבי הספינה.",
+        logistics: "קרוז של 2 ימים ולילה 1. מומלץ לבחור במסלול מפרץ Lan Ha השקט והפחות ממוסחר.",
+        mapQuery: "Halong Bay International Cruise Port"
       },
       {
         day: 9,
-        area: "אזור 4: DA NANG",
-        title: "דה נאנג רגועה וחופים",
-        timeline: "בוקר בחוף My Khe ➔ צהריים: חצי האי Son Tra ופסל הליידי בודהה ➔ ערב בנהר האן וגשר הדרקון.",
-        sites: "חוף My Khe, חצי האי Son Tra, פגודת Linh Ung, פסל ה-Lady Buddha, טיילת נהר Han, גשר הדרקון (Dragon Bridge - מופע אש בסופ\"ש ב-21:00).",
-        food: "לטעום Mì Quảng מסורתי ב-Mì Quảng 1A או Mỳ Quảng Cô Sáu. ברים ושווקי לילה בנהר Han.",
-        logistics: "יום רגוע להורדת דופק אחרי שבוע אינטנסיבי בצפון. נסיעות קצרות ב-Grab.",
-        mapQuery: "Lady Buddha Da Nang"
+        area: "הלונג ➔ דה נאנג • יום 9",
+        title: "בוקר במפרץ → טיסה לדה נאנג",
+        timeline: "בוקר: זריחה וטאי-צ'י על הסיפון ➔ ירידה מהספינה בצהריים ➔ נסיעה לשדה התעופה (Noi Bai / Cat Bi) ➔ טיסה לדה נאנג.",
+        sites: "נופי בוקר של מפרץ הלונג, נחיתה בעיר החוף המרכזית דה נאנג וצ'ק-אין במלון על קו החוף.",
+        food: "ארוחת ערב ראשונה באזור חוף My Khe התוסס.",
+        logistics: "טיסה פנימית של כשעה ורבע. סה\"כ זמן מעבר מהספינה למלון בדה נאנג: כ-6–7 שעות.",
+        mapQuery: "My Khe Beach Da Nang"
       },
       {
         day: 10,
-        area: "אזור 4: DA NANG ➔ HOI AN",
-        title: "הרי השיש והעיירה העתיקה הוי אן",
-        timeline: "בוקר: הרי השיש (Marble Mountains) ➔ צהריים: הגעה להוי אן (14:00) ➔ שקיעה והדלקת פנסים צבעוניים ➔ חזרה לדה נאנג.",
-        sites: "הרי השיש (מערות מקדשים ותצפיות), העיר העתיקה של הוי אן (Hoi An Old Quarter), סמטאות הפנסים, נהר Thu Bon.",
-        food: "מאכלי הוי אן: Cao Lầu, כופתאות White Rose, כריכי Bánh mì מפורסמים, אורז עוף Cơm gà.",
-        logistics: "נסיעה מדה נאנג להוי אן: כ-40 דקות בלבד. חשוב להגיע כבר בצהריים כדי לראות את העיירה באור יום.",
+        area: "דה נאנג והוי אן • יום 10",
+        title: "הרי השיש והעיירה העתיקה הוי אן (Hoi An)",
+        timeline: "בוקר: הרי השיש (Marble Mountains) ➔ צהריים: הגעה להוי אן (14:00) ➔ שקיעה, סמטאות הפנסים והפלגת משאלות בנהר.",
+        sites: "מערות ומקדשי הרי השיש, סמטאות העיר העתיקה של הוי אן (Hoi An Ancient Town), הגשר היפני, שוק הלילה של הפנסים.",
+        food: "לטעום בהוי אן: אטריות Cao Lầu, כופתאות White Rose, כריך Bánh mì מפורסם ואורז עוף Cơm gà.",
+        logistics: "נסיעה מדה נאנג להוי אן אורכת כ-40 דקות בלבד. מומלץ להגיע באור יום ולהישאר עד שהפנסים נדלקים בחושך.",
         mapQuery: "Hoi An Ancient Town"
       },
       {
         day: 11,
-        area: "אזור 4: DA NANG",
-        title: "Ba Na Hills / גשר הידיים הזהוב",
-        timeline: "יציאה מוקדם מאוד ל-Ba Na Hills ➔ ביקור בגשר הידיים לפני גלי התיירים ➔ מתחם הכפר הצרפתי ➔ אחה\"צ חופשי.",
-        sites: "Ba Na Hills וגשר הידיים הזהב (Golden Bridge). חלופה לחובבי טבע נקי: סיור במעבר Hai Van Pass ולגונת Lang Co.",
-        food: "מתחמי האוכל ב-Ba Na Hills או ארוחת ערב עצמאית בדה נאנג.",
-        logistics: "נסיעה של כ-40 דקות. מומלץ להגיע עם פתיחת הרכבלים כדי להצטלם בגשר ללא עומס.",
+        area: "דה נאנג • יום 11",
+        title: "Ba Na Hills וגשר הידיים המוזהב",
+        timeline: "השכמה מוקדמת ויציאה ל-Ba Na Hills ➔ ביקור בגשר הידיים (Golden Bridge) לפני העומס ➔ מתחם הכפר הצרפתי ➔ אחה\"צ חופשי.",
+        sites: "גשר הידיים המפורסם (Golden Bridge), רכבל ההרים המרשים, מתחם הכפר הצרפתי. (חלופה לחובבי טבע: סיור במעבר Hai Van ולגונת Lang Co).",
+        food: "מתחמי האוכל ב-Ba Na Hills או קפה ומסעדה טובה בערב בדה נאנג.",
+        logistics: "כ-40 דקות נסיעה ממרכז העיר. חשוב להגיע מיד עם פתיחת השערים לצילומים נקיים בגשר.",
         mapQuery: "Golden Bridge Ba Na Hills"
       },
       {
         day: 12,
-        area: "אזור 4: DA NANG",
-        title: "דה נאנג מקומית, שווקים ואוכל רחוב",
-        timeline: "06:00 בבוקר: שחייה וחיי קהילה בחוף My Khe ➔ קפה מקומי ושווקים ➔ צהריים/ערב של מאכלי ים.",
-        sites: "חוף My Khe בזריחה, שוק Han Market ושוק Con Market לקניות ומזכרות.",
-        food: "מסעדת Nhà An (אוכל וייטנאמי ביתי וטבעוני), מסעדת פירות הים Mộc quán Seafood. לנסות Bún chả cá ו-Bánh xèo.",
-        logistics: "חוויית החוף ב-06:30 בבוקר היא הדרך היפה ביותר לראות את החיים המקומיים בווייטנאם.",
-        mapQuery: "Han Market Da Nang"
+        area: "דה נאנג • יום 12",
+        title: "חיי חוף מקומיים, שווקים ואוכל רחוב",
+        timeline: "06:30 בבוקר: שחייה וזריחה בחוף My Khe יחד עם המקומיים ➔ קפה קוקוס ➔ קניות בשוק Han Market ➔ סעודת פירות ים.",
+        sites: "חוף My Khe, חצי האי Son Tra, מקדש Linh Ung עם פסל Lady Buddha הענקי המשקיף למפרץ, שוק Han Market.",
+        food: "מרק קציצות דג Bún chả cá, קרפ Bánh xèo פריך, סעודת פירות ים עשירה במסעדת Mộc quán Seafood.",
+        logistics: "יום רגוע ונינוח להנאה מאווירת הנופש של עיר החוף.",
+        mapQuery: "Lady Buddha Da Nang"
       },
       {
         day: 13,
-        area: "אזור 5: DA NANG ➔ HANOI",
-        title: "טיסה להאנוי וסיום הטיול",
-        timeline: "נסיעה קצרה לשדה התעופה של דה נאנג ➔ טיסה להאנוי (~1:25 שעות) ➔ שיטוט אחרון בסמטאות הרובע העתיק.",
-        sites: "הרובע העתיק של האנוי (Old Quarter), אגם Hoan Kiem, קפה ביצים וייטנאמי (Egg Coffee).",
-        food: "מרק Phở מסורתי בהאנוי, Bún chả או כוס בירה קרה ב-Bia Hoi Junction.",
-        logistics: "שדה התעופה בדה נאנג נמצא ממש בתוך העיר (15 דקות נסיעה ממרכז החוף).",
+        area: "דה נאנג ➔ האנוי • יום 13",
+        title: "טיסה להאנוי והרובע העתיק",
+        timeline: "נסיעה קצרה לשדה התעופה בדה נאנג ➔ טיסה להאנוי (~1:20 שעות) ➔ צ'ק-אין ושיטוט בסמטאות 36 הרחובות של הרובע העתיק.",
+        sites: "הרובע העתיק של האנוי (Old Quarter), אגם Hoan Kiem ומקדש Ngoc Son, רחוב הרכבת המפורסם (Train Street).",
+        food: "קפה ביצים (Egg Coffee) המקורי בקפה Giang, מרק Phở האנוי אמיתי ושיפודי Bún chả.",
+        logistics: "שדה התעופה בדה נאנג קרוב מאוד לעיר (15 דקות נסיעה בלבד).",
         mapQuery: "Hoan Kiem Lake Hanoi"
+      },
+      {
+        day: 14,
+        area: "האנוי • יום 14",
+        title: "פרידה מווייטנאם וטיסה הביתה 🛫",
+        timeline: "בוקר רגוע בבתי הקפה סביב האגם ➔ קניות אחרונות של קפה וייטנאמי ומזכרות ➔ נסיעה לשדה התעופה Noi Bai והמראה הביתה.",
+        sites: "אגם Hoan Kiem, כיכר דונג קין נגיה ת'וק, שוק דונג שואן.",
+        food: "קערת מרק פו חמה וכוס קפה אחרונה לפני הנסיעה לשדה.",
+        logistics: "יציאה לשדה התעופה Noi Bai כ-3.5–4 שעות לפני מועד הטיסה הבינלאומית.",
+        mapQuery: "Noi Bai International Airport"
       }
     ];
 
     let currentDayIdx = 0;
 
-    // אתחול כפתורי ימים
     function initScroller() {
       const container = document.getElementById('daysScroller');
       container.innerHTML = '';
@@ -688,7 +685,6 @@
       renderDay();
     }
 
-    // ניהול תגובות ותמונות
     function getStoredComments(day) {
       const data = localStorage.getItem(`vn_comments_day_${day}`);
       return data ? JSON.parse(data) : [];
@@ -706,7 +702,6 @@
       renderDay();
     }
 
-    // הצגת יום
     function renderDay() {
       const d = vietnamItinerary[currentDayIdx];
       const comments = getStoredComments(d.day);
@@ -727,7 +722,7 @@
       const html = `
         <div class="card-top">
           <span class="area-badge">${d.area}</span>
-          <span style="font-size:13px; font-weight:700; color:var(--text-sub);">יום ${d.day} מתוך 13</span>
+          <span style="font-size:13px; font-weight:700; color:var(--text-sub);">יום ${d.day} מתוך 14</span>
         </div>
         <h2 class="card-title">${d.title}</h2>
 
@@ -737,7 +732,7 @@
         </div>
 
         <div class="section-box">
-          <div class="section-title">📍 אטרקציות ואתרים:</div>
+          <div class="section-title">📍 אטרקציות ורכבות הרים:</div>
           <div class="section-body">${d.sites}</div>
         </div>
 
@@ -803,7 +798,6 @@
       uploadedBase64 = null;
     }
 
-    // מעבר בין לשוניות תחתונות
     function switchNavTab(tabId, btn) {
       document.querySelectorAll('.tab-view').forEach(v => v.classList.remove('active'));
       document.querySelectorAll('.nav-tab').forEach(b => b.classList.remove('active'));
@@ -812,7 +806,6 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // הפעלה
     initScroller();
     renderDay();
   </script>
